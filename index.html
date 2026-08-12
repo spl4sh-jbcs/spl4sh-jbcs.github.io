@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="A novel benchmark for scene classification for vehicular applications..">
-  <meta name="keywords" content="vwise, clip, x-clip, scene classification, autonomous">
+        content="SPL4SH: a systematic pipeline for creating 4D synthetic humans for XR content.">
+  <meta name="keywords" content="SPL4SH, synthetic humans, 4D humans, XR, extended reality, generative AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ROAD Dataset
-</title>
+  <title>SPL4SH: 4D Synthetic Humans for XR</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -48,73 +47,42 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">The Road surface Observation and Analysis Dataset (ROAD)
-</title></h1>
+          <h1 class="title is-1 publication-title">SPL4SH: Designing a Systematic Pipeline for 4D Synthetic Humans in XR Content Creation</h1>
 <div class="is-size-5 publication-authors">
   <span class="author-block">
-    <a href="http://wlcosta.github.io">Willams de Lima Costa</a><sup>1</sup>,</span>
+    <a href="https://orcid.org/0009-0009-0427-0917">David Ohara de Souza Cardoso</a><sup>1</sup>,</span>
   <span class="author-block">
-    <a href="#">Thifany Ketuli Silva de Souza</a><sup>1</sup>,</span>
+    <a href="https://orcid.org/0000-0002-7493-4880">Willams de Lima Costa</a><sup>1</sup>,</span>
   <span class="author-block">
-    <a href="#">Jonas Ferreira Silva</a><sup>1</sup>,</span>
+    <a href="https://orcid.org/0009-0000-2914-5340">Pedro Azevedo Abrantes de Oliveira</a><sup>1</sup>,</span>
   <span class="author-block">
-    <a href="#">Carlos Gabriel Bezerra Pereira</a><sup>1</sup>,</span>
+    <a href="https://orcid.org/0000-0001-7180-512X">João Marcelo Xavier Natário Teixeira</a><sup>1,2</sup>,</span>
   <span class="author-block">
-    <a href="#">Bruno Reis Vila Nova</a><sup>1</sup>,</span>
+    <a href="https://orcid.org/0000-0003-4685-3634">Veronica Teichrieb</a><sup>1</sup>,</span>
   <span class="author-block">
-    <a href="#">Rafael Raider Leoni</a><sup>2</sup>,</span>
-  <span class="author-block">
-    <a href="#">Juliano Silva</a><sup>2</sup>,</span>
-  <span class="author-block">
-    <a href="#">Valter Ferreira</a><sup>2</sup>,</span>
-  <span class="author-block">
-    <a href="#">Sibele Neto</a><sup>3</sup>,</span>
-  <span class="author-block">
-    <a href="#">Samantha Uehara</a><sup>4</sup>,</span>
-  <span class="author-block">
-    <a href="#">Daniel Giacomo</a><sup>5</sup>,</span>
-  <span class="author-block">
-    <a href="#">João Marcelo Teixeira</a><sup>1</sup>,</span>
-  <span class="author-block">
-    <a href="#">Veronica Teichrieb</a><sup>1</sup>,</span>
-  <span class="author-block">
-    <a href="#">Cristiano Coelho de Araújo</a><sup>1</sup>
+    <a href="https://orcid.org/0000-0002-7741-5277">Qian Lin</a><sup>3</sup>
   </span>
 </div>
 
 <div class="is-size-5 publication-authors">
-  <span class="author-block"><sup>1</sup>Voxar Labs, Centro de Informática, Universidade Federal de Pernambuco, Brazil</span></br>
-  <span class="author-block"><sup>2</sup>Volkswagen Truck and Bus, Resende, Rio de Janeiro, Brazil</span></br>
-  <span class="author-block"><sup>3</sup>Stellantis Brasil, Porto Real, Rio de Janeiro, Brazil</span></br>
-  <span class="author-block"><sup>4</sup>Volkswagen do Brasil, São Bernardo do Campo, São Paulo, Brazil</span></br>
-  <span class="author-block"><sup>5</sup>Embeddo, Volta Redonda, Rio de Janeiro, Brazil</span></br>
+  <span class="author-block"><sup>1</sup>Voxar Labs, Centro de Informática, Universidade Federal de Pernambuco, Brazil</span><br>
+  <span class="author-block"><sup>2</sup>University of São Paulo, Brazil</span><br>
+  <span class="author-block"><sup>3</sup>HP Inc.</span>
 </div>
 
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="#road-access"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -145,7 +113,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Road surface classification (RSC) is a key enabler for environment-aware predictive maintenance systems. However, existing RSC techniques often fail to generalize beyond narrow operational conditions due to limited sensing modalities and datasets that lack environmental diversity. This work addresses these limitations by introducing a multimodal framework that fuses images and inertial measurements using a lightweight bidirectional cross-attention module followed by an adaptive gating layer that adjusts modality contributions under domain shifts. 	Given the limitations of current benchmarks, especially regarding lack of variability, we introduce ROAD, a new dataset composed of three complementary subsets: (i) real-world multimodal recordings with RGB–IMU streams synchronized using a gold-standard industry datalogger, captured across diverse lighting, weather, and surface conditions; (ii) a large vision-only subset designed to assess robustness under adverse illumination and heterogeneous capture setups; and (iii) a synthetic subset generated to study out-of-distribution generalization in scenarios difficult to obtain in practice. Experiments show that our method achieves a +1.4 pp improvement over the previous state-of-the-art on the PVS benchmark and an +11.6 pp improvement on our multimodal ROAD subset, with consistently higher F1-scores on minority classes. The framework also demonstrates stable performance across challenging visual conditions, including nighttime, heavy rain, and mixed-surface transitions. These findings indicate that combining affordable camera and IMU sensors with multimodal attention mechanisms provides a scalable, robust foundation for road surface understanding, particularly relevant for regions where environmental variability and cost constraints limit the adoption of high-end sensing suites.
+          <p>XR content creation increasingly combines reconstruction, generative modeling, animation synthesis, neural rendering, and real-time engine deployment. However, creating deployable synthetic 4D humans remains fragmented because human assets must preserve body structure, appearance, motion, deformation, and scene-level plausibility across time. This paper proposes SPL4SH, a Systematic Pipeline for 4D Synthetic Humans, to investigate how contemporary AI-assisted techniques can be organized into an XR-oriented production workflow. SPL4SH is built from a stage-based taxonomy covering modeling, rigging, animation, rendering, and interaction. This taxonomy supports a comparative suitability assessment of recent techniques and guides a modular proof-of-concept implementation integrating SMPLify for parametric body modeling and rigging, Kimodo for controllable motion generation, SMPLitex for SMPL-compatible texture generation, Rokoko-based retargeting, Blender-based asset integration, and Unreal Engine deployment. The evaluation combines individual module tests, full-pipeline integration, and scene-level deployment in a meeting-room environment involving human-object, human-human, and human-scene arrangements. Results show that modular 4D human generation is technically feasible: SMPL-X geometry supports rigged deformation, generated motions can be retargeted to animated characters, texture maps improve mannequin-like bodies, and final assets can be placed in real-time XR scenes. However, persistent barriers remain, including format mismatch, manual skeleton alignment, retargeting fragility, texture discontinuities, hallucinated visual regions, motion interpenetration, stiff transitions, and scene-level validation. SPL4SH contributes a grounded framework for selecting, combining, and evaluating independent generative components as XR-ready synthetic human assets.
           </p>
         </div>
       </div>
@@ -156,46 +124,18 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      
-
-   
-
-    
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3" id="vwise-access">Access to data</h2>
-
-        <div class="content has-text-justified">
-          <p> Please contact <a href="mailto:wlc2@cin.ufpe.br">wlc2@cin.ufpe.br</a> to request data access, informing your intended use and affiliation.</p>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
-
-<!--
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{azevedo2024vwise,
-  title={VWise: A novel benchmark for evaluating scene classification for vehicular applications},
-  author={Azevedo, Pedro and Ara{\'u}jo, Emanuella and Pierre, Gabriel and Costa, Willams de Lima and Teixeira, Jo{\~a}o Marcelo and Ferreira, Valter and Jones, Roberto and Teichrieb, Veronica},
-  journal={arXiv preprint arXiv:2406.03273},
-  year={2024}
+    <pre><code>@article{cardoso2026spl4sh,
+  title={SPL4SH: Designing a Systematic Pipeline for 4D Synthetic Humans in XR Content Creation},
+  author={Cardoso, David Ohara de Souza and Costa, Willams de Lima and Oliveira, Pedro Azevedo Abrantes de and Teixeira, Jo{\~a}o Marcelo Xavier Nat{\'a}rio and Teichrieb, Veronica and Lin, Qian},
+  journal={Journal of the Brazilian Computer Society},
+  year={2026},
+  note={Accepted for publication}
 }</code></pre>
   </div>
 </section>
--->
 
 <footer class="footer">
   <div class="container">
